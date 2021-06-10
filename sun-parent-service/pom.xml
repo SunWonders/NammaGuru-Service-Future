@@ -13,7 +13,7 @@
     <artifactId>sun-parent-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sun-parent-service</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Parent Service</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -87,6 +87,7 @@
         </plugins>
     </build>
     <modules>
-<!--    <module>../SunConfigServer</module>-->
+        <module>../sun-user-service</module>
+        <module>../sun-department-service</module>
     </modules>
 </project>
