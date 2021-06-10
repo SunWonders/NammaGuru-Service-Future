@@ -89,5 +89,6 @@
     <modules>
         <module>../sun-user-service</module>
         <module>../sun-department-service</module>
+        <module>../sun-content-service</module>
     </modules>
 </project>
