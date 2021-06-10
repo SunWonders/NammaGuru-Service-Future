@@ -1,0 +1,65 @@
+<ruleset name="Custom ruleset"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+    <description>
+        Ruleset applied for this project
+    </description>
+    <rule ref="category/java/bestpractices.xml">
+        <exclude name="JUnitTestsShouldIncludeAssert"/>
+        <exclude name="PreserveStackTrace"/>
+        <exclude name="ForLoopCanBeForeach"/>
+    </rule>
+    <rule ref="category/java/codestyle.xml">
+        <exclude name="AtLeastOneConstructor"/>
+        <exclude name="LongVariable" />
+        <exclude name="LinguisticNaming" />
+        <exclude name="ShortClassName" />
+    </rule>
+    <rule ref="category/java/design.xml">
+        <exclude name="UseUtilityClass"/>
+        <exclude name="DataClass"/>
+        <exclude name="AvoidUncheckedExceptionsInSignatures"/>
+        <exclude name="LawOfDemeter"/>
+        <exclude name="AvoidCatchingGenericException" />
+        <exclude name="AvoidRethrowingException" />
+        <exclude name="UseObjectForClearerAPI"/>
+        <exclude name="ExcessivePublicCount"/>
+        <exclude name="ExcessiveMethodLength"/>
+        <exclude name="GodClass"/>
+    </rule>
+    <rule ref="category/java/design.xml/CyclomaticComplexity">
+        <properties>
+            <property name="methodReportLevel" value="10"></property>
+        </properties>
+    </rule>
+    <rule ref="category/java/design.xml/TooManyFields">
+        <properties>
+            <property name="maxfields" value="35" />
+        </properties>
+    </rule>
+    <rule ref="category/java/design.xml/TooManyMethods">
+        <properties>
+            <property name="maxmethods" value="25" />
+        </properties>
+    </rule>
+    <rule ref="category/java/design.xml/ExcessiveImports">
+        <properties>
+            <property name="minimum" value="45.0" />
+        </properties>
+    </rule>
+    <rule ref="category/java/documentation.xml">
+        <exclude name="CommentSize" />
+    </rule>
+    <rule ref="category/java/errorprone.xml">
+        <exclude name="DataflowAnomalyAnalysis"/>
+    </rule>
+    <rule ref="category/java/design.xml/CyclomaticComplexity">
+        <properties>
+            <property name="methodReportLevel" value="12" />
+        </properties>
+    </rule>
+    <rule ref="category/java/multithreading.xml"></rule>
+    <rule ref="category/java/performance.xml"></rule>
+    <rule ref="category/java/security.xml"></rule>
+</ruleset>
